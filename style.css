@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Livvic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@500&display=swap');
+
+/* Global Selectors */
+body {
+    background: linear-gradient(180deg, #E6D6C7 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+    margin: 0;
+}
+
+/* Class Selectors */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-left:  4em;
+}
+@media (max-width: 600px) {
+  svg {
+    visibility: hidden;
+  }
+}
+.header h1 {
+    font-family: Parisienne;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 96px;
+    color: #4E5255;
+    margin-right: 2em;
+    margin-left: 2em;
+    padding-top: 0.5em;
+   
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #9B9483;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+ul#navbar li {
+    float: left;
+}
+ul#navbar li a {
+    display: block;
+    color: #000000;
+    font-weight: bold;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+ul#navbar li a:hover {
+    background-color:blanchedalmond;
+    color: black;
+}
+
+.hero-image img {
+    display: block;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 10em;
+}
+
+.tagline {
+    text-align: center;
+    font-family: Poiret One;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    color: #616F76;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.galleries {
+  font-family: Livvic;
+  text-align: center;
+}
+.gallery {
+  font-family: Livvic;
+  font-weight: 200;
+  font-size: 48px;
+  text-align: center;
+  
+}
+
+
+#galleries {
+  width: 2000px;
+  height: 2000px;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  #galleries {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+#galleries > img {
+  float: left;
+  width: 45%;
+  margin: 1.66%;
+}
+
+@media (max-width: 600px) {
+  #galleries > img {
+    float: left;
+    width: 100%;
+    margin: 1.66%;
+  }
+}
+
+footer{
+width: 1600px;
+height: 43px;
+font-family: Poiret One;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+text-align: center;
+margin-left: 5em;
+}
